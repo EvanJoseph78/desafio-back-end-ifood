@@ -1,0 +1,14 @@
+package com.evan.desafiobackendifood;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+import org.springframework.boot.SpringApplication;
+
+@SpringBootApplication
+@EnableMongoRepositories()
+public class DesafioBackEndIfoodApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DesafioBackEndIfoodApplication.class, args);
+	}
+}
