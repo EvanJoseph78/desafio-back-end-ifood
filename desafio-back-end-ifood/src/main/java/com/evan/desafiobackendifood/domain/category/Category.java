@@ -1,12 +1,12 @@
 package com.evan.desafiobackendifood.domain.category;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import lombok.Getter;
 
-@Document(collation = "categories")
+@Document(collection = "categories")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -16,4 +16,5 @@ public class Category {
     private String title;
     private String description;
     private String ownerId;
+
 }
